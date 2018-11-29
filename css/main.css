@@ -465,8 +465,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .display-2--light {
     color: #00000;
 }
-
-.subhead + .display-2 {
+.display-3 {
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 5.2rem;
+  line-height: 1.255;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+.whitetext {
+  color:white;
+}
+.display-3--light {
+    color: #FFFFFF;
+}
+.subhead + .display-2 + .display-3 {
     margin-top: .6rem;
 }
 
