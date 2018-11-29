@@ -349,6 +349,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars {
     list-style: none;
     margin: 6rem 0 3rem;
+    margin-left: 20%;
+    margin-right:20%;
 }
 
 .skill-bars li {
