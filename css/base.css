@@ -1,9 +1,47 @@
+/* =================================================================== 
+ *
+ *  Glint v1.0 Base Stylesheet
+ *  11-20-2017
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # imports 
+ *  # normalize
+ *  # basic/base setup styles
+ *      ## Media
+ *      ## Typography resets 
+ *      ## links
+ *      ## inputs
+ *  # grid
+ *      ## medium size devices
+ *      ## tablets
+ *      ## mobile devices
+ *      ## small mobile devices
+ *  # block grids
+ *      ## medium size devices
+ *      ## tablets
+ *      ## mobile devices
+ *      ## small mobile devices
+ *  # MISC
+ *
+ * =================================================================== */
 
+
+/* ===================================================================
+ * # imports 
+ *
+ * ------------------------------------------------------------------- */
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 @import url("fonts.css");
 
 
+/* ===================================================================
+ * # normalize
+ * normalize.css v5.0.0 | MIT License | 
+ * github.com/necolas/normalize.css
+ *
+ * ------------------------------------------------------------------- */
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -15,7 +53,10 @@ body {
     margin: 0;
 }
 
-
+article,
+aside,
+footer,
+header,
 nav,
 section {
     display: block;
@@ -170,6 +211,78 @@ button:-moz-focusring,
     outline: 1px dotted ButtonText;
 }
 
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+canvas {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
 /* ===================================================================
  * # basic/base setup styles
  *
@@ -202,7 +315,7 @@ button {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## Media
  * ------------------------------------------------------------------- */
 img,
@@ -212,8 +325,8 @@ video {
 }
 
 
-/* -------------------------------------------------------------------
- * ## Typography resets
+/* ------------------------------------------------------------------- 
+ * ## Typography resets 
  * ------------------------------------------------------------------- */
 div,
 dl,
@@ -279,8 +392,8 @@ li {
 }
 
 
-/* -------------------------------------------------------------------
- * ## links
+/* ------------------------------------------------------------------- 
+ * ## links 
  * ------------------------------------------------------------------- */
 a {
     text-decoration: none;
@@ -292,8 +405,8 @@ a img {
 }
 
 
-/* -------------------------------------------------------------------
- * ## inputs
+/* ------------------------------------------------------------------- 
+ * ## inputs 
  * ------------------------------------------------------------------- */
 fieldset {
     margin: 0;
@@ -352,7 +465,7 @@ textarea {
 }
 
 
-/* column width classes
+/* column width classes 
  * -------------------------------------- */
 .col-one {
     width: 8.33333%;
@@ -411,7 +524,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## medium size devices
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
@@ -469,7 +582,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## tablets
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
@@ -497,7 +610,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## mobile devices
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
@@ -534,7 +647,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## small mobile devices
  * ------------------------------------------------------------------- */
 
@@ -596,7 +709,7 @@ textarea {
 
 
 /**
- * Clearing for block grid columns. Allow columns with
+ * Clearing for block grid columns. Allow columns with 
  * different heights to align properly.
  */
 
@@ -609,7 +722,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## medium size devices
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
@@ -645,7 +758,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## tablets
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
@@ -681,7 +794,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## mobile devices
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
@@ -717,7 +830,7 @@ textarea {
 }
 
 
-/* -------------------------------------------------------------------
+/* ------------------------------------------------------------------- 
  * ## small mobile devices
  * ------------------------------------------------------------------- */
 
@@ -797,6 +910,13 @@ textarea {
     text-align: right;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
 
 .align-center {
     margin-left: auto;
